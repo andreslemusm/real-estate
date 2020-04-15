@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contact — Andrew Hill</title>
+  </head>
+  <body>
+    <!-- Phone navigation -->
+
+    <div class="phone-nav">
+      <input type="checkbox" class="phone-nav__checkbox" id="nav-toggle" />
+      <label for="nav-toggle" class="phone-nav__button">
+        <span class="phone-nav__icon">&nbsp;</span>
+      </label>
+      <nav class="phone-nav__navigation" id="phoneNavigation">
+        <a href="index.html" class="phone-nav__link" id="phone-link">Info</a>
+        <div class="nav-dropdown" id="phoneDropDown">
+          <span class="phone-nav__link" id="showDropDown">Availabilities</span>
+          <div class="phone-nav__dropdown">
+            <a href="5eastend.html" class="nav-dropdown__link">5 East end</a>
+            <a href="18sacket.html" class="nav-dropdown__link">18 Sacket way</a>
+            <a href="23sacket.html" class="nav-dropdown__link">23 Sacket way</a>
+            <a href="6cliffside.html" class="nav-dropdown__link"
+              >6 Cliffside drive</a
+            >
+            <a href="2cliffside.html" class="nav-dropdown__link"
+              >2 Cliffside drive</a
+            >
+            <a href="7cliffside.html" class="nav-dropdown__link"
+              >7 Cliffside drive</a
+            >
+          </div>
+        </div>
+        <a href="contact.html" class="phone-nav__link" id="phone-link"
+          >Contact</a
+        >
+      </nav>
+    </div>
+    <header class="header">
+      <a href="index.html" class="header__title">Andrew Hill</a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Info</a>
+        <div class="nav-dropdown">
+          <a href="5eastend.html" class="nav__link">Availabilities</a>
+          <div class="nav-dropdown__content">
+            <a href="5eastend.html" class="nav-dropdown__link">5 East end</a>
+            <a href="18sacket.html" class="nav-dropdown__link">18 Sacket way</a>
+            <a href="23sacket.html" class="nav-dropdown__link">23 Sacket way</a>
+            <a href="6cliffside.html" class="nav-dropdown__link"
+              >6 Cliffside drive</a
+            >
+            <a href="2cliffside.html" class="nav-dropdown__link"
+              >2 Cliffside drive</a
+            >
+            <a href="7cliffside.html" class="nav-dropdown__link"
+              >7 Cliffside drive</a
+            >
+          </div>
+        </div>
+        <a href="contact.html" class="nav__link nav__link--contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero hero--contact">
+        <div class="hero__wrapper">
+          <h1 class="heading-primary">Contact Us</h1>
+        </div>
+      </section>
+      <section class="section-flex container-big">
+        <div class="section-nav section-nav--contact">
+          <h3 class="section-nav__heading">Leasing</h3>
+          <p class="section-nav__text">
+            For all leasing inquiries, please call Jaina Fletcher at +61 3 0000
+            0000 or use the form at right.
+          </p>
+          <div class="social">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="social__item"
+            >
+              <img
+                src="img/facebook-logo.png"
+                alt="Facebook icon"
+                class="social__img"
+              />
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="social__item">
+              <img
+                src="img/twitter-logo.png"
+                alt="Twitter icon"
+                class="social__img"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="social__item"
+            >
+              <img
+                src="img/instagram-logo.png"
+                alt="Pinterest icon"
+                class="social__img"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              class="social__item"
+            >
+              <img
+                src="img/youtube-logo.png"
+                alt="Pinterest icon"
+                class="social__img"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="section-group">
+          <div class="form">
+            <form method="post" action="#">
+              <div class="form__group">
+                <label for="select-dropdown" class="form__heading"
+                  >Interest *</label
+                >
+                <select
+                  name="houses"
+                  id="select-dropdown"
+                  class="form__select"
+                  required
+                >
+                  <option value="">Please select</option>
+                  <option value="5 East End">5 East End</option>
+                  <option value="18 Sackett Way">18 Sackett Way</option>
+                  <option value="23 Sackett Way">23 Sackett Way</option>
+                  <option value="6 Cliffside Drive">6 Cliffside Drive</option>
+                  <option value="2 Cliffside Drive">2 Cliffside Drive</option>
+                  <option value="7 Cliffside Drive">7 Cliffside Drive</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label for="name" class="form__heading">Name *</label>
+                <div class="form__flex">
+                  <div class="form__flex--names">
+                    <input id="name" type="text" class="form__input" required />
+                    <label class="form__caption">First Name</label>
+                  </div>
+                  <div class="form__flex--names">
+                    <input id="name" type="text" class="form__input" required />
+                    <label class="form__caption">Last Name</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form__group">
+                <label for="email" class="form__heading">Email Address *</label>
+                <input id="email" type="email" class="form__input" required />
+              </div>
+              <div class="form__group">
+                <label for="phone" class="form__heading">Phone Number *</label>
+                <input id="phone" type="text" class="form__input" required />
+              </div>
+              <div class="form__group">
+                <label for="message" class="form__heading">Message</label>
+                <textarea id="message" class="form__input" rows="6"></textarea>
+              </div>
+              <div class="form__group">
+                <button type="submit" class="btn-submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__upper">
+        <h2 class="heading-secondary">Your new home awaits</h2>
+        <a href="" class="cta cta--footer">Start the process →</a>
+      </div>
+      <div class="footer__lower">
+        <div class="footer__adress">
+          Andrew Hill, 52 Vaucluse Rd, Vaucluse, NSW, 2030, Australia
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <!-- <script src="app.js"></script> -->
+  </body>
+</html>
