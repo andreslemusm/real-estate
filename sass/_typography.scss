@@ -1,0 +1,33 @@
+.heading-primary {
+  font-size: 6.6rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+
+  @include responsive(phone) {
+   font-size: 4rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.3rem;
+  font-weight: 300;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  color: rgba(31,37,38,.75);
+
+  &__uppercase {
+    text-transform: uppercase;
+    color:#222;
+  }
+}
+
+.text-wrapper {
+  padding: 4rem 7rem;
+
+  @include responsive(phone) {
+   padding: 4rem 2rem;
+ }
+}

@@ -1,0 +1,49 @@
+.cta {
+  display: inline-block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: $color-white;
+  background-color: $color-dark-green;
+  padding: 1.3rem 2.8rem;
+
+  &:hover {
+    background-color: rgba(34,46,46,.8);
+  }
+
+  &--footer {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 1.3rem 2.8rem;
+    background-color: #1f2526;
+    @include transition;
+
+    &:hover {
+      background-color: $color-dark-green;
+    }
+  }
+
+  &--section {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    @include transition;
+  }
+}
+
+.btn-submit {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 1.2rem 3rem;
+  color: $color-white;
+  background-color: #1f2526;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .8;
+    @include transition;
+  }
+}

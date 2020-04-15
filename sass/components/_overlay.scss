@@ -1,0 +1,75 @@
+.overlay {
+  height: 100vh;
+  width: 100%;
+  padding: 2rem 5rem;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  @include transition;
+
+  @include responsive(phone) {
+   flex-direction: column;
+   padding: 2rem 0;
+  }
+
+  &__img {
+    height: 100%;
+    margin: 0 auto;
+
+    @include responsive(phone) {
+     height: 80%;
+     width: 100%;
+     object-fit: contain;
+    }
+  }
+
+  &__btn {
+    height: 2.5rem;
+    cursor: pointer;
+
+    @include responsive(phone) {
+     display: none;
+    }
+  }
+
+  &__close-icon {
+    position: absolute;
+    top: 1rem;
+    right: 2.5rem;
+    font-size: 3.5rem;
+    color: #ccc;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+}
+
+.showOverlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btns-phone {
+  display: none;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0 2rem;
+
+  @include responsive(phone) {
+   display: flex;
+   justify-content: space-between;
+  }
+
+  &__btn {
+    height: 2.5rem;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,57 @@
+.form {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 5rem;
+
+  @include responsive(phone) {
+   padding-left: 0;
+   margin-top: 4rem;
+  }
+
+  &__group {
+    width: 100%;
+    color: rgba(61,61,61,.6);
+    padding: 1rem;
+  }
+
+  &__heading {
+    display: block;
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1.2rem;
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+
+    &:focus {
+      background-color: $color-white;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+
+    &--names {
+      width: 49%;
+    }
+  }
+
+  &__caption {
+    display: block;
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+    margin-top: .8rem;
+  }
+
+  &__select {
+    font-size: 1.6rem;
+    background-color: #fafafa;
+    outline: none;
+    height: 3rem;
+  }
+}

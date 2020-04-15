@@ -1,0 +1,120 @@
+.hero {
+  height: 90vh;
+  background-image: linear-gradient(to bottom, rgba(50,69,68,.8), rgba(50,69,68,.8)), url(../img/home-hero.jpg);
+  background-size: cover;
+  background-position: bottom;
+  color: $color-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include responsive(tab-land) { //widh < 1200px?
+   height: 60vh;
+ }
+
+  &--5-east {
+    height: 80vh;
+    background-image: linear-gradient(to bottom, rgba(50,69,68,.8), rgba(50,69,68,.8)), url(../img/5-east.jpg);
+    background-position: center;
+
+    @include responsive(tab-land) { //widh < 1200px?
+     height: 50vh;
+   }
+  }
+
+  &--18-sacket{
+    height: 80vh;
+    background-image: linear-gradient(to bottom, rgba(50,69,68,.8), rgba(50,69,68,.8)), url(../img/hg-9.jpg);
+    background-position: center;
+
+    @include responsive(tab-land) { //widh < 1200px?
+     height: 50vh;
+   }
+  }
+
+  &--23-sacket {
+    height: 80vh;
+    background-image: linear-gradient(to bottom, rgba(50,69,68,.8), rgba(50,69,68,.8)), url(../img/23sacket-hero.jpg);
+    background-position: center;
+
+    @include responsive(tab-land) { //widh < 1200px?
+     height: 50vh;
+   }
+  }
+
+  &--6-cliffside {
+    height: 80vh;
+    background-image: linear-gradient(to bottom, rgba(50,69,68,.8), rgba(50,69,68,.8)), url(../img/6cliffside-hero.jpg);
+    background-position: center;
+
+    @include responsive(tab-land) { //widh < 1200px?
+     height: 50vh;
+   }
+  }
+
+  &--2-cliffside {
+    height: 80vh;
+    background-image: linear-gradient(to bottom, rgba(50,69,68,.8), rgba(50,69,68,.8)), url(../img/2cliffside-hero.jpeg);
+    background-position: center;
+
+    @include responsive(tab-land) { //widh < 1200px?
+     height: 50vh;
+   }
+  }
+
+  &--7-cliffside {
+    height: 80vh;
+    background-image: linear-gradient(to bottom, rgba(50,69,68,.8), rgba(50,69,68,.8)), url(../img/7cliffside-hero.jpg);
+    background-position: 0 70%;
+
+    @include responsive(tab-land) { //widh < 1200px?
+     height: 50vh;
+   }
+  }
+
+  &--contact {
+    height: 65vh;
+    background-image: linear-gradient(to bottom, rgba(50,69,68,.8), rgba(50,69,68,.8)), url(../img/contact.jpg);
+    background-position: center;
+
+    @include responsive(tab-land) { //widh < 1200px?
+     height: 40vh;
+   }
+  }
+
+  &__wrapper {
+    width: 65%;
+    text-align: center;
+    margin: 0 auto;
+    color: $color-white;
+    animation: moveUp 350ms ease-out;
+
+    @include responsive(tab-land) { //widh < 1200px?
+     width: 90%;
+   }
+  }
+
+  &__text {
+    font-size: 2.6rem;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  80% {
+    opacity: 0.5;
+    transform: translateY(1.5rem);
+  }
+
+   100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
